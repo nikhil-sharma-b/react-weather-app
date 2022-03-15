@@ -1,0 +1,13 @@
+.top {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.description {
+  /* Set the width of the div equal to maximum of its content in 2 alternative ways*/
+  /* display: inline-block; */
+  width: max-content;
+
+  position: absolute;
+  right: 5%;
+}

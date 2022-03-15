@@ -1,0 +1,22 @@
+.app {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  /* Overlay */
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+.app::before {
+  content: "";
+  /* Sets the background with an url (from mentioned) without repeat centered along the x and y axes with background-size of 'cover' */
+  background: url("./assets/clouds.jpeg") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* These position properties are not required (the 'top' and 'left') */
+  /* top: 0;
+  left: 0; */
+  /* Places the image below the overlay */
+  z-index: -1;
+}
